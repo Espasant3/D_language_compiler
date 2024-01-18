@@ -9,5 +9,3 @@ En el analizador sintáctico se imprimen los componentes léxicos, con un leve f
 
 	< lexema , valor >
 
-En el analizador léxico, como los comentarios pueden ser encontrados en el autómata de operandos
-
