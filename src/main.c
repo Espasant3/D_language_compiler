@@ -12,6 +12,8 @@ int main(int argc, char** argv) {
 
     initialize(&ts);
 
+    asignarFichero(argv[1]);
+
     pedirComponentes(&ts);
 
     destruir(&ts);

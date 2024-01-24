@@ -17,4 +17,9 @@ void pedirComponentes(tablaSimbolos *TS){
             free(comp_pedido.comp_lexico);
         }
     }
-} 
+}
+
+void asignarFichero(char* file_name){
+    asign_file(file_name);
+}
+

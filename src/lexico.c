@@ -11,6 +11,10 @@
 const int comment = -50; //Constante empleada para evitar mandar los comentarios al analizados sintáctico
 int line = 0; //Contador del número de línea actual para mandar en caso de error
 
+void asign_file(char* file_name){
+    set_file(file_name);
+}
+
 typedef enum {
     START_BINARY,
     INTEGER,

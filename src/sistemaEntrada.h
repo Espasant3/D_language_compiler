@@ -8,5 +8,6 @@
 char sig_carac();
 void prev_carac();
 char* get_word();
+void set_file(char* file_name);
 
 #endif //PRACTICA_1_SISTEMAENTRADA_H

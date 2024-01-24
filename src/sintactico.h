@@ -9,5 +9,6 @@
 #include "tabla_de_simbolos.h"
 
 void pedirComponentes(tablaSimbolos *TS);
+void asignarFichero(char* file_name);
 
 #endif //PRACTICA_1_SINTACTICO_H

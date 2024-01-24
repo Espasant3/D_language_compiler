@@ -8,6 +8,6 @@
 #include "tabla_de_simbolos.h"
 
 tipoelem sig_comp_lexico(tablaSimbolos *TS);
-
+void asign_file(char* file_name);
 
 #endif //PRACTICA_1_LEXICO_H

@@ -21,12 +21,15 @@ char buffer1[BUFFER_SIZE];
 char buffer2[BUFFER_SIZE];
 
 bool retroceso = false;
+
 /*
- * Función de apertura del fichero y de inicialización de los punteros, la inicialización solo se realizará una vez
+ * Función de asignación y apertura del fichero y de inicialización de los punteros,
+ * la inicialización solo se realizará una vez
  */
-void open_fichero(){
+
+void set_file(char* file_name){
     if(fichero == NULL){
-        if((fichero = fopen("regression.d", "r"))){
+        if((fichero = fopen(file_name, "r"))){
 
             inicio.bufferApuntado = 1;
             inicio.position = 0;
@@ -41,12 +44,14 @@ void open_fichero(){
                 buffer1[escrito] = EOF;
             }
 
-            }else{
+        }else{
             printf("File doesn't exist\n");
             exit(EXIT_FAILURE);
         }
     }
+
 }
+
 /*
  * Función que cierra el fichero abierto
  */
@@ -152,7 +157,7 @@ void updateInicio(){
  */
 char sig_carac(){
     char letra;
-    open_fichero();
+
     letra = getBuffer(fin.bufferApuntado)[fin.position];
     if(letra != EOF){
         fin.position++;
